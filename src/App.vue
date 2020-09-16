@@ -1,17 +1,14 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <h1>Bulldozer group</h1>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "App",
-  components: {
-  }
+  components: {}
 };
 </script>
 
-<style lang="stylus">
-</style>
+<style lang="stylus"></style>
