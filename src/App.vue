@@ -1,14 +1,56 @@
 <template>
-  <div id="app" class="app">
+  <div id="app">
+    <Header :links="links" :phoneNumber="phoneNumber" />
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
+    <h1>Bulldozer group</h1>
     <h1>Bulldozer group</h1>
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
 export default {
   name: "App",
-  components: {}
+  components: { Header: Header },
+  data: () => {
+    return {
+      phoneNumber: {
+        human: '+7 (900) 246-80-68',
+        code: '+79002468068'
+      },
+      links: [
+        {
+          name: "О нас"
+        },
+        {
+          name: "Услуги"
+        },
+        {
+          name: "Порядок работы"
+        },
+        {
+          name: "Портфолио"
+        },
+        {
+          name: "Контакты"
+        }
+      ]
+    };
+  }
 };
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+
+#app
+  background-color $grey
+</style>
