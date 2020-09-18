@@ -2,27 +2,17 @@
   <div id="app">
     <Header :links="links" :phoneNumber="phoneNumber" />
     <Promo/>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
-    <h1>Bulldozer group</h1>
+    <About/>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Promo from "@/components/Promo.vue";
+import About from "@/components/About.vue";
 export default {
   name: "App",
-  components: { Header: Header, Promo: Promo },
+  components: { Header: Header, Promo: Promo, About: About },
   data: () => {
     return {
       phoneNumber: {
