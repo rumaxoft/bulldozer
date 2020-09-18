@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header :links="links" :phoneNumber="phoneNumber" />
+    <Promo/>
     <h1>Bulldozer group</h1>
     <h1>Bulldozer group</h1>
     <h1>Bulldozer group</h1>
@@ -18,14 +19,15 @@
 
 <script>
 import Header from "@/components/Header.vue";
+import Promo from "@/components/Promo.vue";
 export default {
   name: "App",
-  components: { Header: Header },
+  components: { Header: Header, Promo: Promo },
   data: () => {
     return {
       phoneNumber: {
-        human: '+7 (900) 246-80-68',
-        code: '+79002468068'
+        human: "+7 (900) 246-80-68",
+        code: "+79002468068"
       },
       links: [
         {
