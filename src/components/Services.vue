@@ -55,8 +55,13 @@ export default {
         border-left 9px solid $orange
         text-align left
         +tablet()
-            font-size 48px
-            line-height 62px
+          font-size 48px
+          line-height 62px
+          margin-left 48px
+          margin-right 48px
+        +tablet-landscape()
+          margin-left 88px
+          margin-right 88px
     &__list
         margin 0 auto
         padding 0
