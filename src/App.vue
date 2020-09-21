@@ -4,6 +4,7 @@
     <Promo />
     <About />
     <Services :serviceCards="serviceCards" />
+    <Timeline/>
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import Header from "@/components/Header.vue";
 import Promo from "@/components/Promo.vue";
 import About from "@/components/About.vue";
 import Services from "@/components/Services.vue";
+import Timeline from "@/components/Timeline.vue";
 export default {
   name: "App",
   components: {
     Header: Header,
     Promo: Promo,
     About: About,
-    Services: Services
+    Services: Services,
+    Timeline: Timeline
   },
   data: () => {
     return {
