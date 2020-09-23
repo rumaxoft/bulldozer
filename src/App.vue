@@ -4,7 +4,8 @@
     <Promo />
     <About />
     <Services :serviceCards="serviceCards" />
-    <Timeline/>
+    <Timeline />
+    <Gallery :gallery="gallery" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Promo from "@/components/Promo.vue";
 import About from "@/components/About.vue";
 import Services from "@/components/Services.vue";
 import Timeline from "@/components/Timeline.vue";
+import Gallery from "@/components/Gallery.vue";
 export default {
   name: "App",
   components: {
@@ -21,7 +23,8 @@ export default {
     Promo: Promo,
     About: About,
     Services: Services,
-    Timeline: Timeline
+    Timeline: Timeline,
+    Gallery: Gallery
   },
   data: () => {
     return {
@@ -98,6 +101,134 @@ export default {
           title: "Отделка фасадов домов",
           text: "Товарищи! постоянное информационно-пропагандистское",
           imageUrl: require("@/assets/services/6.jpg")
+        }
+      ],
+      gallery: [
+        {
+          id: "1",
+          title: "Квартира 83 м2. Краснодар",
+          text:
+            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          thumbnailUrl: require("@/assets/gallery/1/thumbnail.jpg"),
+          slides: [
+            {
+              imageUrl: require("@/assets/gallery/1/1.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/2.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/3.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/4.jpg")
+            }
+          ]
+        },
+        {
+          id: "2",
+          title: "Апартаменты. Лофт. Сочи.",
+          text:
+            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          thumbnailUrl: require("@/assets/gallery/2/thumbnail.jpg"),
+          slides: [
+            {
+              imageUrl: require("@/assets/gallery/2/1.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/2.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/3.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/4.jpg")
+            }
+          ]
+        },
+        {
+          id: "3",
+          title: "Кухня по индивидуальному проекту",
+          text:
+            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          thumbnailUrl: require("@/assets/gallery/3/thumbnail.jpg"),
+          slides: [
+            {
+              imageUrl: require("@/assets/gallery/3/1.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/2.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/3.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/4.jpg")
+            }
+          ]
+        },
+        {
+          id: "4",
+          title: "Кафе. Туапсе.",
+          text:
+            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          thumbnailUrl: require("@/assets/gallery/4/thumbnail.jpg"),
+          slides: [
+            {
+              imageUrl: require("@/assets/gallery/4/1.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/4/2.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/4/3.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/4/4.jpg")
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Загородный дом. Сочи.",
+          text:
+            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          thumbnailUrl: require("@/assets/gallery/5/thumbnail.jpg"),
+          slides: [
+            {
+              imageUrl: require("@/assets/gallery/5/1.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/5/2.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/5/3.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/5/4.jpg")
+            }
+          ]
+        },
+        {
+          id: "6",
+          title: "Детская. Краснодар.",
+          text:
+            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          thumbnailUrl: require("@/assets/gallery/6/thumbnail.jpg"),
+          slides: [
+            {
+              imageUrl: require("@/assets/gallery/6/1.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/6/2.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/6/3.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/6/4.jpg")
+            }
+          ]
         }
       ]
     };

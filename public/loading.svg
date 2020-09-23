@@ -1,0 +1,25 @@
+<svg version="1.1"
+	class="svg-loader"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0px"
+	y="0px"
+	viewBox="0 0 512 512" fill="none" xml:space="preserve">
+<path d="M256 288C238.4 288 224 273.6 224 256C224 238.4 238.4 224 256 224C273.6 224 288 238.4 288 256C288 257.1 287.1 258 286 258C284.9 258 284 257.1 284 256C284 240.6 271.4 228 256 228C240.6 228 228 240.6 228 256C228 271.4 240.6 284 256 284C257.1 284 258 284.9 258 286C258 287.1 257.1 288 256 288Z" fill="url(#paint0_linear)">
+<animateTransform
+			attributeType="xml"
+			attributeName="transform"
+			type="rotate"
+			from="0 256 256"
+			to="360 256 256"
+			dur="0.6s"
+			repeatCount="indefinite"
+		/>
+</path>
+<defs>
+<linearGradient id="paint0_linear" x1="224" y1="256.206" x2="288" y2="256.206" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3E3E3E"/>
+<stop offset="1" stop-color="#FC7F0C"/>
+</linearGradient>
+</defs>
+</svg>
