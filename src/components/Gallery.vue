@@ -106,6 +106,7 @@ export default {
         background-color white
         margin-top 24px
         text-align left
+        cursor pointer
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         +tablet()
             width 351px
