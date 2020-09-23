@@ -12,7 +12,7 @@
             :key="link.name"
             class="header__desktop-nav-link"
           >
-            {{ link.name }}
+            <a href="#">{{ link.name }}</a>
           </li>
         </ul>
       </nav>
@@ -117,6 +117,7 @@ export default {
         top 0
         right 0
         left 0
+        z-index 100
     &__logo
         display block
         height 32px
@@ -143,6 +144,9 @@ export default {
         font-size 14px
         line-height 16px
         color $darkGrey
+        a
+          text-decoration none
+          color inherit
     &__contacts
         display flex
     &__phone-group
