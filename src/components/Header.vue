@@ -21,12 +21,12 @@
       <div class="header__contacts">
         <div class="header__phone-group">
           <a
-            :href="`tel:${phoneNumber.code}`"
+            :href="`tel:${contacts.phoneNumber.code}`"
             class="header__button header__phone-button reset-button-css"
           >
             <span class="visually-hidden">Позвоните нам</span>
           </a>
-          <span class="header__phone-number">{{ phoneNumber.human }}</span>
+          <span class="header__phone-number">{{ contacts.phoneNumber.human }}</span>
         </div>
         <a
           href="#"
@@ -89,7 +89,7 @@
 <script>
 export default {
   name: "Header",
-  props: ["links", "phoneNumber"],
+  props: ["links", "contacts"],
   data: () => {
     return {
       showMenu: false

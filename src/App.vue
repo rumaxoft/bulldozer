@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <Header :links="links" :phoneNumber="phoneNumber" />
+    <Header :links="links" :contacts="contacts" />
     <Promo />
     <About />
     <Services :serviceCards="serviceCards" />
     <Timeline />
     <Gallery :gallery="gallery" />
+    <Contacts :contacts="contacts"/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import About from "@/components/About.vue";
 import Services from "@/components/Services.vue";
 import Timeline from "@/components/Timeline.vue";
 import Gallery from "@/components/Gallery.vue";
+import Contacts from "@/components/Contacts.vue";
 export default {
   name: "App",
   components: {
@@ -24,13 +26,20 @@ export default {
     About: About,
     Services: Services,
     Timeline: Timeline,
-    Gallery: Gallery
+    Gallery: Gallery,
+    Contacts: Contacts
   },
   data: () => {
     return {
-      phoneNumber: {
-        human: "+7 (900) 246-80-68",
-        code: "+79002468068"
+      contacts: {
+        phoneNumber: {
+          human: "+7 (900) 246-80-68",
+          code: "+79002468068"
+        },
+        address: "г. Краснодар, ул. Улица, дом 10.",
+        email: "mail@mail.ru",
+        whatsapp: "",
+        telegram: ""
       },
       links: [
         {
