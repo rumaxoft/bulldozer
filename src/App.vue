@@ -6,31 +6,25 @@
     <Services :serviceCards="serviceCards" />
     <Timeline />
     <Gallery :gallery="gallery" />
-    <Contacts :contacts="contacts"/>
-    <FooterSection/>
+    <Contacts :contacts="contacts" />
+    <FooterSection />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Promo from "@/components/Promo.vue";
-import About from "@/components/About.vue";
-import Services from "@/components/Services.vue";
-import Timeline from "@/components/Timeline.vue";
-import Gallery from "@/components/Gallery.vue";
-import Contacts from "@/components/Contacts.vue";
-import FooterSection from "@/components/FooterSection.vue";
 export default {
   name: "App",
   components: {
     Header: Header,
     Promo: Promo,
-    About: About,
-    Services: Services,
-    Timeline: Timeline,
-    Gallery: Gallery,
-    Contacts: Contacts,
-    FooterSection: FooterSection
+    "About": () => import("@/components/About.vue"),
+    "Services": () => import("@/components/Services.vue"),
+    "Timeline": () => import("@/components/Timeline.vue"),
+    "Gallery": () => import("@/components/Gallery.vue"),
+    "Contacts": () => import("@/components/Contacts.vue"),
+    "FooterSection": () => import("@/components/FooterSection.vue")
   },
   data: () => {
     return {
@@ -44,22 +38,28 @@ export default {
         whatsapp: "",
         telegram: "",
         instagramm: "",
-        vkontakte: ""      },
+        vkontakte: ""
+      },
       links: [
         {
-          name: "О нас"
+          name: "О нас",
+          href: "#about"
         },
         {
-          name: "Услуги"
+          name: "Услуги",
+          href: "#services"
         },
         {
-          name: "Порядок работы"
+          name: "Порядок работы",
+          href: "#timeline"
         },
         {
-          name: "Портфолио"
+          name: "Портфолио",
+          href: "#gallery"
         },
         {
-          name: "Контакты"
+          name: "Контакты",
+          href: "#contacts"
         }
       ],
       serviceCards: [

@@ -1,5 +1,5 @@
 <template>
-  <section v-on:close-slider="showSlider = false" class="gallery">
+  <section id="gallery" v-on:close-slider="showSlider = false" class="gallery">
     <h2 class="gallery__title">Портфолио</h2>
     <ul class="gallery__list">
       <li

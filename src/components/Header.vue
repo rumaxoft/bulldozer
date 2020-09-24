@@ -5,17 +5,25 @@
         <img src="@/assets/logo.svg" alt="Bulldozer-logo" />
       </a>
       <!-- Desktop navigation -->
-      <nav class="header__desktop-nav">
+      <scrollactive
+        class="header__desktop-nav"
+        :offset="60"
+        active-class="scrollactive--active"
+      >
         <ul class="header__desktop-nav-list">
           <li
             v-for="link in links"
             :key="link.name"
-            class="header__desktop-nav-link"
+            class="header__desktop-nav-item"
           >
-            <a href="#">{{ link.name }}</a>
+            <a
+              class="header__desktop-nav-link scrollactive-item"
+              :href="link.href"
+              >{{ link.name }}</a
+            >
           </li>
         </ul>
-      </nav>
+      </scrollactive>
       <!-- /Desktop navigation -->
 
       <div class="header__contacts">
@@ -26,7 +34,9 @@
           >
             <span class="visually-hidden">Позвоните нам</span>
           </a>
-          <span class="header__phone-number">{{ contacts.phoneNumber.human }}</span>
+          <span class="header__phone-number">{{
+            contacts.phoneNumber.human
+          }}</span>
         </div>
         <a
           href="#"
@@ -48,8 +58,10 @@
         <span class="visually-hidden">меню</span>
       </button>
       <!-- Mobile navigation -->
-      <nav
-        class="header__mobile-nav"
+      <scrollactive
+        class="header__mobile-nav header__desktop-nav"
+        :offset="60"
+        active-class="scrollactive--active"
         v-bind:class="{ 'header__mobile-nav--active': showMenu }"
       >
         <button
@@ -62,9 +74,13 @@
           <li
             v-for="link in links"
             :key="link.name"
-            class="header__mobile-nav-link"
+            class="header__mobile-nav-item"
           >
-            {{ link.name }}
+            <a
+              class="header__mobile-nav-link scrollactive-item"
+              :href="link.href"
+              >{{ link.name }}</a
+            >
           </li>
         </ul>
         <div class="header__social">
@@ -81,7 +97,7 @@
             <span class="visually-hidden">Мы в vkontakte</span>
           </a>
         </div>
-      </nav>
+      </scrollactive>
       <!-- /Mobile navigation -->
     </header>
   </div>
@@ -137,16 +153,20 @@ export default {
         margin 0
         padding 0
         display flex
-    &__desktop-nav-link
+    &__desktop-nav-item
         margin 0
         padding 0 8px
         font-family robotobold
         font-size 14px
         line-height 16px
         color $darkGrey
-        a
+    &__desktop-nav-link
           text-decoration none
-          color inherit
+          color $darkGrey
+          transition all 0.3s ease
+          position relative
+        &:hover
+          color $orange
     &__contacts
         display flex
     &__phone-group
@@ -210,12 +230,17 @@ export default {
         padding 0
         padding-top 24px
         list-style none
-    &__mobile-nav-link
+    &__mobile-nav-item
         margin-bottom 32px
         font-family robotobold
         color $baige
         font-size 24px
         line-height 28px
+    &__mobile-nav-link
+          color $baige
+          text-decoration none
+          font inherit
+          position relative
     &__social-button
         display block
         width 48px
@@ -232,4 +257,18 @@ export default {
         background-image url('~@/assets/vkontakte-baige.svg')
         background-repeat none
         background-position center center
+
+//scrollactive active class
+.scrollactive--active
+  color $orange
+  &::before
+    content ''
+    display block
+    position absolute
+    height 0.2em
+    width 1em
+    left 0
+    bottom -0.2em
+    background-color $orange
+    transition all 0.3s ease
 </style>

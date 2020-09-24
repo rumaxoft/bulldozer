@@ -1,5 +1,5 @@
 <template>
-  <section class="timeline">
+  <section id="timeline" class="timeline">
     <h2 class="timeline__title">Порядок работы</h2>
     <ul
       class="timeline__list"

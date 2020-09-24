@@ -2,6 +2,9 @@ import "@/styles/common.styl";
 import Vue from "vue";
 import App from "./App.vue";
 import VueLazyload from "vue-lazyload";
+import VueScrollactive from "vue-scrollactive";
+
+Vue.use(VueScrollactive);
 
 Vue.config.productionTip = false;
 

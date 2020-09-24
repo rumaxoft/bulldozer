@@ -1,5 +1,5 @@
 <template>
-  <section class="services">
+  <section id="services" class="services">
     <h2 class="services__title">Услуги</h2>
     <ul class="services__list">
       <li
