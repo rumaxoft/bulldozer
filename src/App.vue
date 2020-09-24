@@ -7,6 +7,7 @@
     <Timeline />
     <Gallery :gallery="gallery" />
     <Contacts :contacts="contacts"/>
+    <FooterSection/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Services from "@/components/Services.vue";
 import Timeline from "@/components/Timeline.vue";
 import Gallery from "@/components/Gallery.vue";
 import Contacts from "@/components/Contacts.vue";
+import FooterSection from "@/components/FooterSection.vue";
 export default {
   name: "App",
   components: {
@@ -27,7 +29,8 @@ export default {
     Services: Services,
     Timeline: Timeline,
     Gallery: Gallery,
-    Contacts: Contacts
+    Contacts: Contacts,
+    FooterSection: FooterSection
   },
   data: () => {
     return {
@@ -39,8 +42,9 @@ export default {
         address: "г. Краснодар, ул. Улица, дом 10.",
         email: "mail@mail.ru",
         whatsapp: "",
-        telegram: ""
-      },
+        telegram: "",
+        instagramm: "",
+        vkontakte: ""      },
       links: [
         {
           name: "О нас"
