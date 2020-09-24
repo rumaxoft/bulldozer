@@ -7,7 +7,7 @@
     <Timeline />
     <Gallery :gallery="gallery" />
     <Contacts :contacts="contacts" />
-    <FooterSection />
+    <FooterSection :contacts="contacts" />
   </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
         email: "mail@mail.ru",
         whatsapp: "",
         telegram: "",
-        instagramm: "",
+        instagram: "",
         vkontakte: ""
       },
       links: [

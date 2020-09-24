@@ -39,13 +39,17 @@
           }}</span>
         </div>
         <a
-          href="#"
+          :href="contacts.telegram"
+          target="_blank"
+          rel="noopener noreferrer"
           class="header__button header__telegram-button reset-button-css"
         >
           <span class="visually-hidden">Напишите нам в telegram</span>
         </a>
         <a
-          href="#"
+          :href="contacts.whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
           class="header__button header__whatsapp-button reset-button-css"
         >
           <span class="visually-hidden">Напишите нам в whatsapp</span>
@@ -85,13 +89,17 @@
         </ul>
         <div class="header__social">
           <a
-            href="#"
+            :href="contacts.instagram"
+          target="_blank"
+          rel="noopener noreferrer"
             class="header__social-button header__instagramm-button reset-button-css"
           >
             <span class="visually-hidden">Мы в instagramm</span>
           </a>
           <a
-            href="#"
+            :href="contacts.vkontakte"
+          target="_blank"
+          rel="noopener noreferrer"
             class="header__social-button header__vkontakte-button reset-button-css"
           >
             <span class="visually-hidden">Мы в vkontakte</span>

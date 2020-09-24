@@ -8,7 +8,7 @@
         class="services__card"
       >
         <img
-          :src="serviceCard.imageUrl"
+          v-lazy="serviceCard.imageUrl"
           :alt="serviceCard.title"
           class="services__card-image"
         />

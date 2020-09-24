@@ -8,11 +8,16 @@
           <li class="contacts__list-item">
             <p class="contacts__list-item-content">
               <span class="contacts__address-icon contacts__icon"></span>
-              <span class="contacts__list-item-text">{{ contacts.address }}</span>
+              <span class="contacts__list-item-text">{{
+                contacts.address
+              }}</span>
             </p>
           </li>
           <li class="contacts__list-item">
-            <a href="" class="contacts__list-item-content">
+            <a
+              :href="`tel:${contacts.phoneNumber.code}`"
+              class="contacts__list-item-content"
+            >
               <span class="contacts__phone-icon contacts__icon"></span>
               <p class="contacts__list-item-text">
                 {{ contacts.phoneNumber.human }}
@@ -20,19 +25,32 @@
             </a>
           </li>
           <li class="contacts__list-item">
-            <a href="" class="contacts__list-item-content">
+            <a
+              :href="`mailto:${contacts.email}`"
+              class="contacts__list-item-content"
+            >
               <span class="contacts__email-icon contacts__icon"></span>
               <p class="contacts__list-item-text">{{ contacts.email }}</p>
             </a>
           </li>
           <li class="contacts__list-item">
-            <a href="" class="contacts__list-item-content">
+            <a
+              :href="contacts.whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contacts__list-item-content"
+            >
               <span class="contacts__whatsapp-icon contacts__icon"></span>
               <p class="contacts__list-item-text">напишите нам в whatsapp</p>
             </a>
           </li>
           <li class="contacts__list-item">
-            <a href="" class="contacts__list-item-content">
+            <a
+              :href="contacts.telegram"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contacts__list-item-content"
+            >
               <span class="contacts__telegram-icon contacts__icon"></span>
               <p class="contacts__list-item-text">напишите нам в telegram</p>
             </a>
@@ -41,7 +59,11 @@
       </div>
       <div ref="yandexMap" class="contacts__map">
         <div class="contacts__map-fallback-wrapper">
-          <img v-lazy="require('@/assets/map.png')" alt="map" class="contacts__map-fallback">
+          <img
+            v-lazy="require('@/assets/map.png')"
+            alt="map"
+            class="contacts__map-fallback"
+          />
         </div>
       </div>
     </div>
@@ -84,7 +106,7 @@ export default {
     }
   },
   mounted() {
-    this.deferYandexMap()
+    this.deferYandexMap();
   }
 };
 </script>

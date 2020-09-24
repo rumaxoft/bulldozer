@@ -7,13 +7,17 @@
       <p class="footer__copyright">© 2020 BULLDOZER GROUP</p>
       <div class="footer__social">
         <a
-          href="#"
+          :href="contacts.instagram"
+          target="_blank"
+          rel="noopener noreferrer"
           class="footer__social-button footer__instagramm-button reset-button-css"
         >
           <span class="visually-hidden">Мы в instagramm</span>
         </a>
         <a
-          href="#"
+          :href="contacts.vkontakte"
+          target="_blank"
+          rel="noopener noreferrer"
           class="footer__social-button footer__vkontakte-button reset-button-css"
         >
           <span class="visually-hidden">Мы в vkontakte</span>
@@ -22,7 +26,12 @@
     </div>
     <div class="footer__credits">
       <p class="footer__credits-text">Разработка и внедрение</p>
-      <a href="https://www.rumaxoft.ru/" class="footer__credits-logo">
+      <a
+        href="https://www.rumaxoft.ru/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer__credits-logo"
+      >
         <span class="visually-hidden">перейти на сайт rumaxoft</span>
         <img src="@/assets/rumaxoft.svg" alt="rumaxoft" />
       </a>
