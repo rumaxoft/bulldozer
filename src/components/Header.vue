@@ -63,8 +63,10 @@
       </button>
       <!-- Mobile navigation -->
       <scrollactive
+        v-on:itemchanged="showMenu = false"
+        :duration="10"
         class="header__mobile-nav header__desktop-nav"
-        :offset="60"
+        :offset="48"
         active-class="scrollactive--active"
         v-bind:class="{ 'header__mobile-nav--active': showMenu }"
       >
