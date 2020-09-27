@@ -1,4 +1,7 @@
 const path = require("path");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
+const ImageminMozjpeg = require("imagemin-mozjpeg");
+const ImageminPngquant = require("imagemin-pngquant");
 
 module.exports = {
   chainWebpack: config => {
@@ -6,6 +9,21 @@ module.exports = {
     types.forEach(type =>
       addStyleResource(config.module.rule("stylus").oneOf(type))
     );
+  },
+  configureWebpack: {
+    plugins: [
+      new ImageminPlugin({
+        disable: process.env.NODE_ENV !== "production",
+        plugins: [
+          ImageminMozjpeg({
+            quality: 70
+          }),
+          ImageminPngquant({
+            quality: [0.5, 0.6]
+          })
+        ]
+      })
+    ]
   }
 };
 
