@@ -14,17 +14,23 @@
 <script>
 import Header from "@/components/Header.vue";
 import Promo from "@/components/Promo.vue";
+import About from "@/components/About.vue";
+import Services from "@/components/Services.vue";
+import Timeline from "@/components/Timeline.vue";
+import Gallery from "@/components/Gallery.vue";
+import Contacts from "@/components/Contacts.vue";
+import FooterSection from "@/components/FooterSection.vue";
 export default {
   name: "App",
   components: {
     Header: Header,
     Promo: Promo,
-    "About": () => import("@/components/About.vue"),
-    "Services": () => import("@/components/Services.vue"),
-    "Timeline": () => import("@/components/Timeline.vue"),
-    "Gallery": () => import("@/components/Gallery.vue"),
-    "Contacts": () => import("@/components/Contacts.vue"),
-    "FooterSection": () => import("@/components/FooterSection.vue")
+    About: About,
+    Services: Services,
+    Timeline: Timeline,
+    Gallery: Gallery,
+    Contacts: Contacts,
+    FooterSection: FooterSection
   },
   data: () => {
     return {
