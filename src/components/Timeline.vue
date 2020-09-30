@@ -1,13 +1,18 @@
 <template>
   <section id="timeline" class="timeline">
     <h2 class="timeline__title">Порядок работы</h2>
-    <ul
-      class="timeline__list"
-    >
-      <li v-for="(item, index) in timelineList"
-      :key="index" class="timeline__item">
+    <ul class="timeline__list">
+      <li
+        v-for="(item, index) in timelineList"
+        :key="index"
+        class="timeline__item"
+      >
         <div class="timeline__icon-container">
-          <img :src="item.iconUrl" class="timeline__item-icon" />
+          <img
+            :src="item.iconUrl"
+            class="timeline__item-icon"
+            :alt="item.title"
+          />
         </div>
         <div class="timeline__item-text-block">
           <h3 class="timeline__item-title">{{ item.title }}</h3>
@@ -24,32 +29,30 @@ export default {
       timelineList: [
         {
           title: "Составляем смету",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          text: "Обговаривам виды работ и составляем предварительную смету.",
           iconUrl: require("@/assets/timeline/calculation.svg")
         },
         {
           title: "Подписываем договор",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "В договоре прописываем стоимость работ и материалов, сроки сдачи результатов работ и гарантии.",
           iconUrl: require("@/assets/timeline/contract.svg")
         },
         {
           title: "Закупаем материалы",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "Партнерские отношения с крупнейшими поставщиками строительных материалов в регионе позволяют нам закупать материалы по ценами, существенно ниже среднерыночных.",
           iconUrl: require("@/assets/timeline/materials.svg")
         },
         {
           title: "Проводим ремонтные и строительные работы",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "Проводим ремонтные и строительные работы по строго оговоренному графику и отчитываемся о проделанной работе по каждому этапу работ.",
           iconUrl: require("@/assets/timeline/construction.svg")
         },
         {
           title: "Прием работы + гарантии",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          text: "Сдаем выполненные работы и предоставляем на них гарантию.",
           iconUrl: require("@/assets/timeline/finish.svg")
         }
       ]
@@ -151,6 +154,9 @@ export default {
         +tablet()
           width 300px
           max-width none
+          display flex
+          flex-direction column
+          justify-content center
     &__item-title
         margin 0
         padding 0

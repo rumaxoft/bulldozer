@@ -39,12 +39,12 @@ export default {
           human: "+7 (900) 246-80-68",
           code: "+79002468068"
         },
-        address: "г. Краснодар, ул. Улица, дом 10.",
-        email: "mail@mail.ru",
-        whatsapp: "",
+        address: "350038, г.Краснодар, ул.Промышленная, д.49/2",
+        email: "remont-tut23@yandex.ru",
+        whatsapp: "https://wa.me/+79002468068",
         telegram: "",
-        instagram: "",
-        vkontakte: ""
+        instagram: "https://www.instagram.com/p/CFRhNqoBW2J/?igshid=occ1qs3gjt6p",
+        vkontakte: "https://vk.com/remonttut23"
       },
       links: [
         {
@@ -71,63 +71,56 @@ export default {
       serviceCards: [
         {
           title: "Ремонт квартир под ключ",
-          text: "Товарищи! постоянное информационно-пропагандистское",
+          text: "",
           imageUrl: require("@/assets/services/7.jpg")
         },
         {
           title: "Ремонт и отделка домов, коттеджей, таунхаусов",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени",
+          text: "",
           imageUrl: require("@/assets/services/1.jpg")
         },
         {
           title: "Перепланировка квартиры в новостроке",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          text: "",
           imageUrl: require("@/assets/services/4.jpg")
         },
         {
           title: "Ремонт в новостройке",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени",
+          text: "",
           imageUrl: require("@/assets/services/3.jpg")
         },
         {
           title: "Капитальный ремонт вторичного жилья",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени",
+          text: "",
           imageUrl: require("@/assets/services/2.jpg")
         },
         {
           title: "Ремонт ванной комнаты и с/у под ключ",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной",
+          text: "",
           imageUrl: require("@/assets/services/9.jpg")
         },
         {
           title: "Ремонт офисов и торговых помещений",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          text: "",
           imageUrl: require("@/assets/services/5.jpg")
         },
         {
           title: "Косметический ремонт",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+          text: "",
           imageUrl: require("@/assets/services/8.jpg")
         },
         {
           title: "Отделка фасадов домов",
-          text: "Товарищи! постоянное информационно-пропагандистское",
+          text: "",
           imageUrl: require("@/assets/services/6.jpg")
         }
       ],
       gallery: [
         {
           id: "1",
-          title: "Квартира 83 м2. Краснодар",
+          title: "Ремонт кухни под ключ",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "Здесь представлены фотографии выполненных нами работ по ремонту кухни.",
           thumbnailUrl: require("@/assets/gallery/1/thumbnail.jpg"),
           slides: [
             {
@@ -141,14 +134,29 @@ export default {
             },
             {
               imageUrl: require("@/assets/gallery/1/4.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/5.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/6.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/7.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/8.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/1/9.jpg")
             }
           ]
         },
         {
           id: "2",
-          title: "Апартаменты. Лофт. Сочи.",
+          title: "Ремонт квартиры",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "Выравнивание стен. Оклеивание обоями, окрашивание. Монтаж напольных покрытий и потолков, проводки. Монтаж декоративного камня, декоративных панелей. Установка люстр, светильников и многое другое.",
           thumbnailUrl: require("@/assets/gallery/2/thumbnail.jpg"),
           slides: [
             {
@@ -162,14 +170,74 @@ export default {
             },
             {
               imageUrl: require("@/assets/gallery/2/4.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/5.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/6.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/7.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/8.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/9.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/10.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/11.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/12.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/13.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/14.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/15.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/16.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/17.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/18.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/19.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/20.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/21.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/22.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/23.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/2/24.jpg")
             }
           ]
         },
         {
           id: "3",
-          title: "Кухня по индивидуальному проекту",
+          title: "Ремонт санузла",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "Выполняем работы любой сложности! Отделка стен кафельной плиткой, установка стандартного и нестандартного сантехоборудования, предварительный дизайн-проект.",
           thumbnailUrl: require("@/assets/gallery/3/thumbnail.jpg"),
           slides: [
             {
@@ -183,14 +251,50 @@ export default {
             },
             {
               imageUrl: require("@/assets/gallery/3/4.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/5.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/6.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/7.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/8.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/9.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/10.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/11.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/12.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/13.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/14.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/15.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/3/16.jpg")
             }
           ]
         },
         {
           id: "4",
-          title: "Кафе. Туапсе.",
+          title: "Фото процесса ремонта.",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "Мы всегда содержим в чистоте объект строительства, самостоятельно вывозим строительный мусор. Сдаем все работы в оговоренные сроки.",
           thumbnailUrl: require("@/assets/gallery/4/thumbnail.jpg"),
           slides: [
             {
@@ -204,14 +308,18 @@ export default {
             },
             {
               imageUrl: require("@/assets/gallery/4/4.jpg")
+            },
+            {
+              imageUrl: require("@/assets/gallery/4/5.jpg")
             }
           ]
         },
         {
           id: "5",
-          title: "Загородный дом. Сочи.",
+          title:
+            "Проектирование и монтаж подвода и отвода воды, отопительных систем. ",
           text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
+            "Производим работы любой сложности как в квартирах, так и частных домовладениях. Подвод и отвод воды, отопительные системы, скважины и септики.",
           thumbnailUrl: require("@/assets/gallery/5/thumbnail.jpg"),
           slides: [
             {
@@ -225,27 +333,9 @@ export default {
             },
             {
               imageUrl: require("@/assets/gallery/5/4.jpg")
-            }
-          ]
-        },
-        {
-          id: "6",
-          title: "Детская. Краснодар.",
-          text:
-            "Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание ",
-          thumbnailUrl: require("@/assets/gallery/6/thumbnail.jpg"),
-          slides: [
-            {
-              imageUrl: require("@/assets/gallery/6/1.jpg")
             },
             {
-              imageUrl: require("@/assets/gallery/6/2.jpg")
-            },
-            {
-              imageUrl: require("@/assets/gallery/6/3.jpg")
-            },
-            {
-              imageUrl: require("@/assets/gallery/6/4.jpg")
+              imageUrl: require("@/assets/gallery/5/5.jpg")
             }
           ]
         }
