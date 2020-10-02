@@ -17,11 +17,13 @@
         <p class="gallery__card-text">{{ item.text }}</p>
       </li>
     </ul>
-    <Slider
-      v-if="showSlider"
-      @close="showSlider = false"
-      :slides="currentSlides"
-    />
+    <transition name="modal">
+      <Slider
+        v-if="showSlider"
+        @close="showSlider = false"
+        :slides="currentSlides"
+      />
+    </transition>
   </section>
 </template>
 <script>

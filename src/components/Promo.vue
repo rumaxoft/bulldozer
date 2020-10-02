@@ -1,12 +1,33 @@
 <template>
   <section class="promo">
-      <div class="promo__action-group">
-          <h1 class="promo__title">Все виды строительных работ в Краснодаре</h1>
-          <button class="promo__button reset-button-css"><span>Прайс-лист</span></button>
-      </div>
+    <div class="promo__action-group">
+      <h1 class="promo__title">Все виды строительных работ в Краснодаре</h1>
+      <button
+        @click="isPriceList = true"
+        class="promo__button reset-button-css"
+      >
+        <span>Прайс-лист</span>
+      </button>
+    </div>
+      <transition name="modal">
+        <PriceList @close="isPriceList = false" v-if="isPriceList" />
+      </transition>
   </section>
 </template>
-<script></script>
+<script>
+import PriceList from "@/components/PriceList.vue";
+export default {
+  name: "App",
+  components: {
+    PriceList: PriceList
+  },
+  data: () => {
+    return {
+      isPriceList: false
+    };
+  }
+};
+</script>
 <style lang="stylus">
 .promo
     margin 0
@@ -60,6 +81,7 @@
         padding 16px 32px
         border-radius 32px
         background-color $orange
+        cursor pointer
         +tablet()
             margin-top 64px
         span
@@ -68,4 +90,13 @@
             line-height 16px
             text-transform uppercase
             color $baige
+
+// Vue transition styles
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
 </style>
