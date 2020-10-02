@@ -42,7 +42,7 @@ export default {
         address: "350038, г.Краснодар, ул.Промышленная, д.49/2",
         email: "remont-tut23@yandex.ru",
         whatsapp: "https://wa.me/+79002468068",
-        telegram: "",
+        telegram: "tg://resolve?domain=helixkrd",
         instagram: "https://www.instagram.com/p/CFRhNqoBW2J/?igshid=occ1qs3gjt6p",
         vkontakte: "https://vk.com/remonttut23"
       },
