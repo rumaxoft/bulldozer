@@ -12,6 +12,9 @@
                 contacts.address
               }}</span>
             </p>
+            <button @click="showNavigation = true" class="contacts__navigate-button reset-button-css">
+              Проложить маршрут
+            </button>
           </li>
           <li class="contacts__list-item">
             <a
@@ -67,14 +70,19 @@
         </div>
       </div>
     </div>
+    <Navigation v-if="showNavigation" @close="showNavigation = false" />
   </section>
 </template>
 <script>
 export default {
   name: "Contacts",
+  components: {
+    Navigation: () => import("@/components/Navigation.vue")
+  },
   props: ["contacts"],
   data: () => {
     return {
+      showNavigation: false,
       yandexMapShown: false
     };
   },
@@ -189,11 +197,23 @@ export default {
       font-size 18px
       +tablet()
         font-size 24px
+    &__navigate-button
+      display block
+      margin-top 16px
+      padding-left 48px
+      font-family robotobold
+      font-size 16px
+      color $darkGrey
+      text-decoration underline
+      +desktop()
+        display none
+
     &__icon
       display block
       background-size cover
       width 32px
       height 32px
+      flex-shrink 0
     &__address-icon
       background-image url('~@/assets/address.svg')
     &__phone-icon

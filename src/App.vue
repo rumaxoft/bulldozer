@@ -43,7 +43,8 @@ export default {
         email: "remont-tut23@yandex.ru",
         whatsapp: "https://wa.me/+79002468068",
         telegram: "tg://resolve?domain=helixkrd",
-        instagram: "https://www.instagram.com/p/CFRhNqoBW2J/?igshid=occ1qs3gjt6p",
+        instagram:
+          "https://www.instagram.com/p/CFRhNqoBW2J/?igshid=occ1qs3gjt6p",
         vkontakte: "https://vk.com/remonttut23"
       },
       links: [

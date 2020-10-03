@@ -171,12 +171,12 @@ export default {
         line-height 16px
         color $darkGrey
     &__desktop-nav-link
-          text-decoration none
-          color $darkGrey
-          transition all 0.3s ease
-          position relative
+        text-decoration none
+        color $darkGrey
+        transition all 0.3s ease
+        position relative
         &:hover
-          color $orange
+            color $orange
     &__contacts
         display flex
     &__phone-group
