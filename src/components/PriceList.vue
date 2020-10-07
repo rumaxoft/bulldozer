@@ -146,9 +146,10 @@ export default {
       padding 48px 0
       position relative
       +tablet()
-        max-width 600px
-        max-height 80%
         padding 64px 0
+      +tablet-landscape()
+        max-width 1000px
+        max-height 90%
     &__content
       width 100%
       height 100%
