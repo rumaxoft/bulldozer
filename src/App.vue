@@ -40,7 +40,7 @@ export default {
           code: "+79002468068"
         },
         address: "350038, г.Краснодар, ул.Промышленная, д.49/2",
-        email: "remont-tut23@yandex.ru",
+        email: "info@bldzr.ru",
         whatsapp: "https://wa.me/+79002468068",
         telegram: "tg://resolve?domain=helixkrd",
         instagram:
