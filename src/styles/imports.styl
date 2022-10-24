@@ -7,27 +7,33 @@ $orange = #FC7F0C;
 $lightGrey = #F1F1F1;
 $baige = #F7F0E9;
 
-/* Fonts */
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'robotoblack';
-    src: url('~@/assets/fonts/roboto-black.woff2') format('woff2'), url('~@/assets/fonts/roboto-black.woff') format('woff');
-    font-display: swap;
+/* Project mixins */
+mobile-only() {
+    @media (max-width: 767px) {
+        {block};
+    }
 }
 
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'robotobold';
-    src: url('~@/assets/fonts/roboto-bold.woff2') format('woff2'), url('~@/assets/fonts/roboto-bold.woff') format('woff');
-    font-display: swap;
+tablet() {
+    @media (min-width: 768px) {
+        {block};
+    }
 }
 
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'robotoregular';
-    src: url('~@/assets/fonts/roboto-regular.woff2') format('woff2'), url('~@/assets/fonts/roboto-regular.woff') format('woff');
-    font-display: swap;
+tablet-landscape() {
+    @media (min-width: 1024px) {
+        {block};
+    }
+}
+
+desktop() {
+    @media (min-width: 1280px) {
+        {block};
+    }
+}
+
+desktop-xl() {
+    @media (min-width: 1440px) {
+        {block};
+    }
 }
