@@ -134,5 +134,4 @@ export default {
 .navigation-leave-active .navigation__content-wrapper {
   transform: translateY(100%);
 }
-
 </style>

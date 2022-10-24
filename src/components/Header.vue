@@ -92,16 +92,16 @@
         <div class="header__social">
           <a
             :href="contacts.instagram"
-          target="_blank"
-          rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
             class="header__social-button header__instagramm-button reset-button-css"
           >
             <span class="visually-hidden">Мы в instagramm</span>
           </a>
           <a
             :href="contacts.vkontakte"
-          target="_blank"
-          rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
             class="header__social-button header__vkontakte-button reset-button-css"
           >
             <span class="visually-hidden">Мы в vkontakte</span>

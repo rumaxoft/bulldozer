@@ -3,6 +3,8 @@ const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const ImageminMozjpeg = require("imagemin-mozjpeg");
 const ImageminPngquant = require("imagemin-pngquant");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = {
   chainWebpack: config => {
@@ -10,6 +12,7 @@ module.exports = {
     types.forEach(type =>
       addStyleResource(config.module.rule("stylus").oneOf(type))
     );
+    config.plugins.delete("prefetch");
   },
   configureWebpack: () => {
     if (process.env.NODE_ENV !== "production") return;
@@ -24,7 +27,8 @@ module.exports = {
             }),
             ImageminPngquant({
               quality: [0.5, 0.6]
-            })
+            }),
+            new BundleAnalyzerPlugin()
           ]
         }),
         new PrerenderSPAPlugin({
@@ -35,7 +39,8 @@ module.exports = {
         })
       ]
     };
-  }
+  },
+  productionSourceMap: false
 };
 
 function addStyleResource(rule) {

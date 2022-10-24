@@ -1,10 +1,10 @@
 <template>
   <section id="about" class="about">
     <div class="about__text-wrapper">
-        <h2 class="about__title">О нас</h2>
-        <p class="about__text">
+      <h2 class="about__title">О нас</h2>
+      <p class="about__text">
         Вы скоро узнаете...
-        </p>
+      </p>
     </div>
   </section>
 </template>

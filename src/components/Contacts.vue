@@ -12,7 +12,10 @@
                 contacts.address
               }}</span>
             </p>
-            <button @click="showNavigation = true" class="contacts__navigate-button reset-button-css">
+            <button
+              @click="showNavigation = true"
+              class="contacts__navigate-button reset-button-css"
+            >
               Проложить маршрут
             </button>
           </li>

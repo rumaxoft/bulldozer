@@ -25,8 +25,7 @@
 import { Carousel, Slide } from "vue-carousel";
 export default {
   data: () => {
-    return {
-    };
+    return {};
   },
   props: ["slides"],
   components: {

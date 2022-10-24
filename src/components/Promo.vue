@@ -9,9 +9,9 @@
         <span>Прайс-лист</span>
       </button>
     </div>
-      <transition name="modal">
-        <PriceList @close="isPriceList = false" v-if="isPriceList" />
-      </transition>
+    <transition name="modal">
+      <PriceList @close="isPriceList = false" v-if="isPriceList" />
+    </transition>
   </section>
 </template>
 <script>
